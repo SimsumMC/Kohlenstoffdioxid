@@ -11,7 +11,7 @@ def calculate(c_atoms: int):
     c_prefix = 2 if even else 1
 
     h_atoms = 2 * c_atoms + 2
-    o_prefix = c_atoms + h_atoms - 1 if even else h_atoms - c_atoms + 2
+    o_prefix = c_atoms + h_atoms - 1 if even else (h_atoms + c_atoms - 1) /2
 
     carbon_dioxide = c_atoms * 2 if even else c_atoms
     water = h_atoms if even else h_atoms / 2
